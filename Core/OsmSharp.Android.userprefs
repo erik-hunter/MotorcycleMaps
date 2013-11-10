@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OsmSharp.Osm\Tiles\Tile.cs">
+    <Files>
+      <File FileName="OsmSharp.Osm\Tiles\Tile.cs" Line="108" Column="14" />
+      <File FileName="OsmSharp.Osm\Tiles\TileRange.cs" Line="5" Column="23" />
+      <File FileName="OsmSharp.Osm\Data\Cache\DataSourceCache.cs" Line="110" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

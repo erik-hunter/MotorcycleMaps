@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>OsmSharp.UI.master</id>
+        <version>$version$</version>
+        <title>OsmSharp UI Tools</title>
+        <licenseUrl>http://osmsharp.codeplex.com/license</licenseUrl>
+        <projectUrl>http://www.osmsharp.com/</projectUrl>
+	<iconUrl>http://www.osmsharp.com/sites/default/files/osmsharp_logo64.png</iconUrl>
+        <authors>Ben Abelshausen</authors>
+        <owners>Ben Abelshausen</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Some UI components for usage with OsmSharp.</description>
+      	<dependencies>
+            <dependency id="OsmSharp.master" version="3.1" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="Output\OsmSharp.Osm.Interpreter.dll" target="lib\net40\OsmSharp.Osm.Interpreter.dll" />
+        <file src="Output\OsmSharp.Osm.Map.dll" target="lib\net40\OsmSharp.Osm.Map.dll" />
+        <file src="Output\OsmSharp.Osm.Renderer.Gdi.dll" target="lib\net40\OsmSharp.Osm.Renderer.Gdi.dll" />
+        <file src="Output\OsmSharp.Osm.UI.Model.dll" target="lib\net40\OsmSharp.Osm.UI.Model.dll" />
+        <file src="Output\OsmSharp.Osm.UI.WinForms.dll" target="lib\net40\OsmSharp.Osm.UI.WinForms.dll" />
+    </files>
+</package>

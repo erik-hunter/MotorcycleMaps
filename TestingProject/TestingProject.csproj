@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91C8446C-F443-46B3-A68F-FE6564CC034D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestingProject</RootNamespace>
+    <AssemblyName>TestingProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\OsmSharp.Osm\OsmSharp.Osm.csproj">
+      <Project>{249dcec1-615d-40aa-93ff-bce2178dff83}</Project>
+      <Name>OsmSharp.Osm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\OsmSharp.Routing\OsmSharp.Routing.csproj">
+      <Project>{87a55f64-1162-4df3-8b68-800e66d019ec}</Project>
+      <Name>OsmSharp.Routing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\OsmSharp.Tools\OsmSharp.Tools.csproj">
+      <Project>{95c32f29-5537-4fb7-8c85-b754bc9903a9}</Project>
+      <Name>OsmSharp.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\OsmSharp.UnitTests\OsmSharp.UnitTests.csproj">
+      <Project>{73be366f-133a-4c7b-8775-6fa3e7c8452f}</Project>
+      <Name>OsmSharp.UnitTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\File\OsmSharp.Osm.Data.File.UnitTests\OsmSharp.Osm.Data.File.UnitTests.csproj">
+      <Project>{9bf62fcb-46c2-4d35-8bf4-70134b2d9a40}</Project>
+      <Name>OsmSharp.Osm.Data.File.UnitTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\SQLite\OsmSharp.Osm.Data.SQLite\OsmSharp.Osm.Data.SQLite.csproj">
+      <Project>{5c4bce30-fbb8-408a-b702-33dff5cc4a36}</Project>
+      <Name>OsmSharp.Osm.Data.SQLite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\SQLServer\OsmSharp.Osm.Data.SQLServer.Unittests\OsmSharp.Osm.Data.SQLServer.Unittests.csproj">
+      <Project>{5ca75f99-7306-467f-804d-24bd3e501df6}</Project>
+      <Name>OsmSharp.Osm.Data.SQLServer.Unittests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\SQLServer\OsmSharp.Osm.Data.SQLServer\OsmSharp.Osm.Data.SQLServer.csproj">
+      <Project>{269551d7-97ac-464b-930e-1cd338df790b}</Project>
+      <Name>OsmSharp.Osm.Data.SQLServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoadOsmData\LoadOsmData.csproj">
+      <Project>{24d478ac-79a9-4190-ae7f-11b18983cff6}</Project>
+      <Name>LoadOsmData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Osm2OsmSharp\Osm2OsmSharp.csproj">
+      <Project>{843ae583-d357-4de5-8491-265715060599}</Project>
+      <Name>Osm2OsmSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI\OsmSharp.UI.Interpreter\OsmSharp.UI.Interpreter.csproj">
+      <Project>{30ccec5d-49c1-4a5f-986d-8ce14ebde666}</Project>
+      <Name>OsmSharp.UI.Interpreter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI\OsmSharp.UI.Map\OsmSharp.UI.Map.csproj">
+      <Project>{b076c8ed-b40f-4bab-b91a-0673bb753c06}</Project>
+      <Name>OsmSharp.UI.Map</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI\OsmSharp.UI.Unittests\OsmSharp.UI.Unittests.csproj">
+      <Project>{b682a239-7846-4f98-83f8-eb1e6f71acf1}</Project>
+      <Name>OsmSharp.UI.Unittests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI\Winforms\OsmSharp.Osm.Renderer.Gdi\OsmSharp.Osm.Renderer.Gdi.csproj">
+      <Project>{9b62129c-166a-4d54-afd5-8ece28dac233}</Project>
+      <Name>OsmSharp.Osm.Renderer.Gdi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI\Winforms\OsmSharp.Osm.UI.Model\OsmSharp.Osm.UI.Model.csproj">
+      <Project>{f9ad02a8-7b4a-402d-bac0-c2dc610bfd02}</Project>
+      <Name>OsmSharp.Osm.UI.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI\Winforms\OsmSharp.Osm.UI.WinForms.Test\OsmSharp.Osm.UI.WinForms.Test.csproj">
+      <Project>{fdff4e61-7361-4fec-9ad2-33aa60ecec00}</Project>
+      <Name>OsmSharp.Osm.UI.WinForms.Test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI\Winforms\OsmSharp.Osm.UI.WinForms\OsmSharp.Osm.UI.WinForms.csproj">
+      <Project>{3ddb7306-710b-4cd9-90b8-e29f1127b1a5}</Project>
+      <Name>OsmSharp.Osm.UI.WinForms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
